@@ -10,10 +10,10 @@ namespace FluentQuery
             
             var q = new FluentQuery();
             var query = q
-                .Select (Pessoa.Nome)
-                    .〡 (Pessoa.Idade)
-                    .〡 (Funcionario.Salario * 200).As("Valor_Final")
-                    .〡 (Pessoa.Telefone).As("[Telefone Teste]")
+                .Select(Pessoa.Nome)
+                    .〡(Pessoa.Idade)
+                    .〡(Funcionario.Salario * 200).As("Valor_Final")
+                    .〡(Pessoa.Telefone).As("[Telefone Teste]")
                     .〡Sum(Funcionario.Salario).As("ValorSalario")
                 .From(Funcionario)
                     .InnerJoin(Pessoa)  .On(Pessoa.PessoaId == Funcionario.PessoaId)
