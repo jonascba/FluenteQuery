@@ -6,8 +6,10 @@ namespace FluentQuery
     {
         static void Main(string[] args)
         {
+            var uf = "MT";
+            
             var q = new FluentQuery();
-            Console.WriteLine(q
+            var query = q
                 .Select (Pessoa.Nome)
                     .〡 (Pessoa.Idade)
                     .〡 (Funcionario.Salario * 200).As("Valor_Final")
@@ -20,13 +22,17 @@ namespace FluentQuery
                     .LeftJoin(Uf)       .On(Uf.UfId == Cidade.UfId)
                 .Where(Funcionario.Salario >= 2500.95)
                     .And〱〱 (Pessoa.Idade > 18).Or(Pessoa.Sexo != "M").〱〱
-                    .And(Uf.Sigla == "MT")
-                .OrderBy〱〱
+                ;
+            // Dynamic Where Condition
+            if (uf != string.Empty)
+                q = q.And(Uf.Sigla == uf);
+                    
+            q = q.OrderBy〱〱
                     .〡〡(Pessoa.Idade) .Desc
                     .〡(Pessoa.PessoaId)
-                .〱〱
-                
-            );
+                    .〱〱;
+            
+            Console.WriteLine(q);
         }
     }
 }

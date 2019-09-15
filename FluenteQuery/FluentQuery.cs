@@ -103,7 +103,7 @@ namespace FluentQuery
         
         public FluentQuery 〡Sum(object expression) => Instruction($" \r\n,SUM({expression}) ");
         
-        public FluentQuery 〡Σ(object expression) => Instruction($" \r\n,SUM({expression}) ");
+        public FluentQuery 〡Σ(object expression) => 〡Sum(expression);
         
         
         public FluentQuery IsNull(object checkExpression, object replacementValue) => Instruction($" ISNULL({checkExpression}, {replacementValue}) ");
@@ -149,7 +149,7 @@ namespace FluentQuery
         public FluentQuery GroupBy(params EntityField[] fields) => 
             Instruction($" GROUP BY {GetCommaSeparetedList(String.Empty, fields)} \r\n");
         
-        public FluentQuery OrderBy〱〱 => Instruction($"ORDER BY (");
+        public FluentQuery OrderBy〱〱 => Instruction($" ORDER BY (");
        
         public FluentQuery OrderBy(params EntityField[] fields) => 
             Instruction($" ORDER BY {GetCommaSeparetedList(String.Empty, fields)} \r\n");
