@@ -1,4 +1,6 @@
-namespace FluentQuery
+using FluentQuery;
+
+namespace FluenteQuery.ConsoleSample
 {
     public struct PessoaEntity
     {

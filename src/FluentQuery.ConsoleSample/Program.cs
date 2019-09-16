@@ -1,5 +1,5 @@
 ﻿using System;
-using static FluentQuery.Entities;
+using static FluenteQuery.ConsoleSample.Entities;
 
 namespace FluenteQuery.ConsoleSample
 {
