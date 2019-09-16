@@ -353,3 +353,9 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/visualstudio
+
+# JetBrains
+.idea
+
+# OSX
+.DS_Store

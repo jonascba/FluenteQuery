@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0CA9E98-664C-4141-A1DC-168BE940F543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentQuery", "src\FluentQuery\FluentQuery.csproj", "{FD4DC5EE-91B7-4372-B975-C5A6C6ABBF76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentQuery.ConsoleSample", "src\FluentQuery.ConsoleSample\FluentQuery.ConsoleSample.csproj", "{F688E12E-7B82-4FFD-8CF7-0C6ABD61B65D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD4DC5EE-91B7-4372-B975-C5A6C6ABBF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4DC5EE-91B7-4372-B975-C5A6C6ABBF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4DC5EE-91B7-4372-B975-C5A6C6ABBF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4DC5EE-91B7-4372-B975-C5A6C6ABBF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F688E12E-7B82-4FFD-8CF7-0C6ABD61B65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F688E12E-7B82-4FFD-8CF7-0C6ABD61B65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F688E12E-7B82-4FFD-8CF7-0C6ABD61B65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F688E12E-7B82-4FFD-8CF7-0C6ABD61B65D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD4DC5EE-91B7-4372-B975-C5A6C6ABBF76} = {C0CA9E98-664C-4141-A1DC-168BE940F543}
+		{F688E12E-7B82-4FFD-8CF7-0C6ABD61B65D} = {C0CA9E98-664C-4141-A1DC-168BE940F543}
+	EndGlobalSection
+EndGlobal
